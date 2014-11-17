@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zks-dq-xvJ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="214"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kyj-O4-Oli">
+                                        <rect key="frame" x="116" y="72" width="46" height="30"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="1" green="0.2190449609" blue="0.28530852309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonaction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yry-Oj-8eQ"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="this is a TTTAttributedLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4OG-1e-aHv" customClass="TTTAttributedLabel">
+                                        <rect key="frame" x="42" y="125" width="264" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.17312313579999999" green="0.19445294790000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="214" id="OtP-XD-aB5"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LDm-qf-qP8">
+                                <rect key="frame" x="0.0" y="214" width="600" height="386"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzy-M2-JcH">
+                                        <rect key="frame" x="168" y="149" width="46" height="30"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button2action:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pWi-bM-9rT"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="this is a TTTAttributedLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbA-A5-6kp" customClass="TTTAttributedLabel">
+                                        <rect key="frame" x="44" y="78" width="242" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.96798025389999998" blue="0.0047431314680000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zks-dq-xvJ" secondAttribute="trailing" id="1ct-DJ-09a"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="LDm-qf-qP8" secondAttribute="bottom" id="6Tq-Cf-fPq"/>
+                            <constraint firstItem="LDm-qf-qP8" firstAttribute="top" secondItem="zks-dq-xvJ" secondAttribute="bottom" id="8zD-5i-5Cu"/>
+                            <constraint firstItem="LDm-qf-qP8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="9My-hB-oqB"/>
+                            <constraint firstItem="zks-dq-xvJ" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Toj-AZ-fBq"/>
+                            <constraint firstAttribute="trailing" secondItem="LDm-qf-qP8" secondAttribute="trailing" id="Xg1-hS-91U"/>
+                            <constraint firstItem="zks-dq-xvJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="kDn-mI-ftx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="botlabel" destination="nbA-A5-6kp" id="PcH-Kg-fre"/>
+                        <outlet property="toplabel" destination="4OG-1e-aHv" id="DTU-5G-Q05"/>
+                        <outlet property="viewbottom" destination="LDm-qf-qP8" id="WLN-vt-aTQ"/>
+                        <outlet property="viewtop" destination="zks-dq-xvJ" id="iZp-7U-EbZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
